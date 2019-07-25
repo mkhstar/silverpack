@@ -2,11 +2,6 @@ const SmoothScroll = require('smooth-scroll');
 const cpList = require('cp-classlist');
 const ScrollReveal = require("./scrollview");
 
-ScrollReveal().reveal('main, #kesfet, #black-series, #one-cikanlar,#newsletter ,footer ', {
-  duration: 1500,
-  reset: true
-});
-
 new SmoothScroll('a[href*="#"]');
 
 const mainNavbar = document.querySelector("nav#main-navbar");
@@ -90,3 +85,30 @@ closeIcon.addEventListener("click", () => {
   cpList(document.querySelector("section#photo-gallery .image.active")).remove("active");
   cpList(photoGallery).remove("lightbox");
 })
+
+
+
+
+
+// WAIT FOR IMAGES TO LOAD BEFORE BRINGING BACK PAGE
+const imgs = document.querySelectorAll("img");
+const len = imgs.length;
+let counter = 0;
+
+for (let i = 0; i < len; i++) {
+  var myImage = new Image();
+  myImage.src = imgs[i].src;
+  myImage.onload = incrementCounter;
+}
+
+function incrementCounter() {
+  counter++;
+  if (counter === len - 1) {
+    cpList(document.querySelector("body .loader")).remove("active");
+    cpList(document.querySelector("body .page")).add("active");
+    ScrollReveal().reveal('main #kesfet, #black-series, #one-cikanlar,#newsletter ,footer ', {
+      duration: 1000,
+      reset: true
+    });
+  }
+}
