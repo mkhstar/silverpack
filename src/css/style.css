@@ -1,0 +1,31 @@
+/* Load Oswald font from google api */
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+/* Load font awesome from node modules */
+@import "font-awesome/css/font-awesome.min.css";
+
+/* DEFAULT STYLINGS */
+@import "./default.css";
+
+/* NAVBAR */
+@import "./navbar.css";
+
+/* MAIN */
+@import "./main.css";
+
+/* KESFET */
+@import "./kesfet.css";
+
+/* BLACK SERIES */
+@import "./black-series.css";
+
+/* ONE CIKANLAR */
+@import "./one-cikanlar.css";
+
+/* NEWSLETTER */
+@import "./newsletter.css";
+
+/* PHOTO GALLERY */
+@import "./photo-gallery.css";
+
+/* FOOTER */
+@import "./footer.css";

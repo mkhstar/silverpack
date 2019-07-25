@@ -1,0 +1,70 @@
+section#one-cikanlar {
+  width: 90%;
+  margin: 30px auto;
+  text-transform: uppercase;
+}
+
+section#one-cikanlar>h1 {
+  text-align: center;
+  margin: 60px 0;
+  font-weight: 100;
+  font-size: 1.7em;
+  letter-spacing: -1px;
+}
+
+section#one-cikanlar>h1 a {
+  text-decoration: underline;
+  color: #4A4A4A;
+}
+
+section#one-cikanlar .items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section#one-cikanlar .item {
+  padding: 0 10px;
+  flex: 1;
+  flex: 1 1 200px;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+section#one-cikanlar .item .image {
+  position: relative;
+}
+
+section#one-cikanlar .item .image a {
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+section#one-cikanlar .item img {
+  width: 100%;
+  height: 350px;
+}
+
+section#one-cikanlar .items .details {
+  text-align: center;
+  color: #4A4A4A;
+}
+
+section#one-cikanlar .items .details h3 {
+  font-weight: lighter
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 850px) {
+  section#one-cikanlar .item {
+    flex: 1 1 200px;
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+}

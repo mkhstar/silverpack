@@ -1,0 +1,128 @@
+nav#main-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  background-color: white;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 100;
+  transition: background-color 0.5s;
+}
+
+nav#main-navbar li {
+  display: inline-block;
+  color: #4A4A4A;
+}
+
+nav#main-navbar li a {
+  padding: 0 7px;
+}
+
+nav#main-navbar .logo {
+  font-weight: 800;
+  font-size: 1.8em;
+  letter-spacing: -2px;
+}
+
+nav#main-navbar li.cart-icon {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: -20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+nav#main-navbar li.cart-icon i,
+nav#main-navbar li.cart-icon span.counter {
+  position: absolute;
+  font-size: 2.2em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+nav#main-navbar li.cart-icon span.counter {
+  color: black;
+  z-index: 2;
+  font-size: 0.8em;
+  top: 47%;
+}
+
+nav .menu-icon {
+  display: none;
+}
+
+/* Cover Navbar */
+@import "./cover-navbar.css";
+
+
+/* Fixed Navbar */
+nav#main-navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 2px 3px #4e4e4e;
+  transition: 0.5s;
+}
+
+/* GO TO TOP */
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: none;
+  text-decoration: none;
+  border-radius: 35px;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+#return-to-top.active {
+  display: block;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
+
+
+@media (max-width: 700px) {
+  nav#main-navbar .categories {
+    display: none;
+  }
+
+  nav .user-field {
+    display: none !important;
+  }
+
+  nav .menu-icon {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.7em;
+  }
+}

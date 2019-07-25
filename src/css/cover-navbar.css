@@ -1,0 +1,59 @@
+nav#main-navbar.cover-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: background-color 0.5s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav#main-navbar.cover-navbar li {
+  display: block;
+  color: white;
+  font-size: 2em;
+  padding: 5px;
+}
+
+nav#main-navbar.cover-navbar .logo,
+nav#main-navbar.cover-navbar .separator {
+  display: none;
+}
+
+nav#main-navbar.cover-navbar li.cart-icon {
+  background-color: transparent;
+  color: white;
+  padding: 10;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+nav#main-navbar.cover-navbar li.cart-icon i,
+nav#main-navbar.cover-navbar li.cart-icon span.counter {
+  position: relative;
+  font-size: 1.5em;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 0%);
+  z-index: 1;
+  color: white;
+}
+
+
+
+nav#main-navbar.cover-navbar .categories {
+  display: block !important;
+}
+
+nav#main-navbar.cover-navbar .user-field {
+  display: block !important;
+}
+
+nav#main-navbar.cover-navbar .menu-icon {
+  display: none;
+}

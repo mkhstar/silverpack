@@ -1,0 +1,65 @@
+section#kesfet {
+  max-height: 85vh;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section#kesfet .kesfet-item {
+  flex: 1;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+section#kesfet .kesfet-item .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+}
+
+section#kesfet .kesfet-item h1 {
+  font-size: 2em;
+  margin-bottom: 50px;
+  letter-spacing: -2px;
+}
+
+section#kesfet .kesfet-item a {
+  padding: 15px 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 4px;
+  border: 1px inset white;
+}
+
+section#kesfet .kesfet-item a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.1em;
+  transition: 0.4s linear;
+}
+
+section#kesfet .erkek-kesfet {
+  background-image: url(../imgs/erkek.png);
+}
+
+section#kesfet .kadin-kesfet {
+  background-image: url(../imgs/kadin.png);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+  section#kesfet {
+    height: 66.667vh;
+    flex-direction: column;
+    font-size: 0.7em;
+  }
+
+  section#kesfet .kesfet-item h1 {
+    margin-bottom: 20px;
+  }
+}

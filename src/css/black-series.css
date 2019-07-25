@@ -1,0 +1,33 @@
+section#black-series {
+  min-height: 35vh;
+  background-image: url(../imgs/black-series.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+section#black-series .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+section#black-series .content h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: -2px;
+  transform: scaleY(1.1)
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+  section#black-series {
+    height: 33.33vh;
+    background-attachment: scroll;
+  }
+}

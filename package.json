@@ -1,0 +1,17 @@
+{
+  "name": "silverback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Kusi Musah Hussein",
+  "license": "ISC",
+  "dependencies": {
+    "cp-classlist": "^1.0.1",
+    "font-awesome": "^4.7.0",
+    "smooth-scroll": "^16.1.0"
+  }
+}

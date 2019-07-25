@@ -1,0 +1,70 @@
+main {
+  background-image: url(../imgs/girl-running.png);
+  min-height: calc(100vh - 51px);
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+}
+
+main:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+main .content {
+  text-align: center;
+}
+
+main .content h1,
+main .content .link {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+main .content h1 {
+  font-size: 7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 20px;
+  font-weight: 100;
+  padding: 0 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main .content .link {
+  bottom: 20px;
+  margin: auto;
+  font-size: 3em;
+  color: white;
+}
+
+main .content a {
+  opacity: 0.6;
+}
+
+main .content a:hover {
+  opacity: 1;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  main .content h1 {
+    font-size: 4em;
+  }
+
+  main .content .link {
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,121 @@
+footer {
+  margin-top: 30px;
+}
+
+footer .main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  background-color: #EAEAEA;
+}
+
+footer .main-footer .category-list {
+  display: flex;
+  flex: 2;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+footer .main-footer .category-list div {
+  padding: 0 40px;
+}
+
+footer .main-footer .category-list h3 {
+  margin-bottom: 7px;
+}
+
+footer .main-footer .category-list li {
+  list-style-type: none;
+  padding: 7px 0;
+  font-weight: lighter;
+  color: #7B7B7B;
+}
+
+
+footer .footer-newsletter {
+  flex: 1;
+}
+
+footer .footer-newsletter p {
+  margin: 0 auto 20px auto;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+
+footer .footer-newsletter form {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+footer .footer-newsletter form input {
+  width: 60%;
+}
+
+footer .footer-newsletter form button {
+  width: 30%;
+}
+
+footer .footer-newsletter .footer-icons i {
+  font-size: 1.3em;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 7px 10px;
+  border: 1px solid black;
+}
+
+footer .footer-newsletter .footer-icons i:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+
+footer #copy-right {
+  color: #7B7B7B;
+  padding: 20px;
+  background-color: #d4d4d4;
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 847px) {
+  footer .main-footer .category-list div {
+    padding: 0 20px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .main-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer .footer-newsletter {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 450px) {
+  footer .main-footer .category-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .main-footer .category-list div {
+    margin-bottom: 20px;
+  }
+
+  footer .footer-newsletter form input {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-newsletter form button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
